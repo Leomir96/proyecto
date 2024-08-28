@@ -1,0 +1,239 @@
+#logo {
+    margin-top: 2%;
+    width: 120px;
+    height: 48px;
+}
+#input{
+    border: 0px;
+    font-size: 2rem;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    vertical-align: top;
+    width: 100%;
+    height: 100%;
+    color: #0A3871;
+    padding: 10px;
+    display: flex;
+    box-sizing: border-box;
+    max-height: 100%;
+}
+#output{
+    border-radius: 6px;
+    font-size: 1.5rem;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    color: #BDBDBD;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    overflow-y: auto;
+    word-break: break-word;
+    background-image: url('img/Muñeco.png');
+    background-size: auto; /* Mantiene las dimensiones originales de la imagen */
+    background-position: center; /* Centra la imagen dentro del div */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    max-height: 100%;
+}
+#container{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    margin-left: 8%;
+    margin-right: 6%;
+    box-sizing: border-box;
+    max-height: 100%;
+}
+#caja1{
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    height: 100%;
+    width: 65%;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    max-height: 100%;
+}
+#caja2{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 35%;
+    background-color: #fff;
+    align-items: center;
+    border-radius: 15px;
+    box-sizing: border-box;
+    max-height: 100%;
+}
+.botones{
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+#cifrarButton{
+    width: 200px;
+    height: 40px;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    background-color: #0A3871;
+    color: #fff;
+    border-radius: 15px;
+    border: 0px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+#decifrarButton{
+    width: 200px;
+    height: 40px;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    background-color: #D8DFE8;
+    color: #0A3871;
+    border-radius: 15px;
+    border: 1px solid;
+    border-color: #0A3871;
+    margin-left: 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+#copiarButton{
+    width: 200px;
+    height: 40px;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    background-color: #0A3871;
+    color: #fff;
+    border-radius: 15px;
+    border: 0px;
+    margin-bottom: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+#reglas{
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-size: 0.75rem;
+    display: flex;
+    flex-direction: row;
+}
+#vector{
+    width: 16px;
+    height: 16px;
+    padding-left: 1%;
+    padding-top: 2%;
+    padding-right: 1.2%;
+}
+
+body{
+    background-color: #E5E5E5;
+}
+
+#footer {
+    background-color: #004080;
+    color: #ffffff;
+    padding: 6px;
+    margin-top: 5%;
+    display: flex;
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Arial', sans-serif;
+    justify-content: center;
+}
+
+textarea {
+    background-color: #E5E5E5;
+    resize: none;
+    background: none;
+    outline: none;
+    height: 100%;
+    display: flex;
+    box-sizing: border-box;
+    max-height: 100%;
+}
+@media(max-width:992px){
+ #container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0%;
+    margin-right: 0%;
+    height: 100vh;
+    align-items: center;
+ }
+ #caja1{
+    width: 100%;
+    height: 65%;
+    margin-top: 5%;    
+ }
+ #caja2{
+    width: 100%;
+    height: 35%;
+    margin-top: 5%;
+ }
+ #caja2 #output {    
+    background-image: none !important;
+}
+#copiarButton{
+    margin-bottom: 2%;
+}
+.botones {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Asegura que los botones estén centrados en su contenedor */
+    gap: 10px; /* Añade un espacio entre los botones */
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+}
+
+#cifrarButton, #decifrarButton {
+    margin: 0; /* Elimina cualquier margen que pueda afectar la alineación */
+    align-self: center; /* Asegura que cada botón esté centrado en el contenedor */
+    width: 50%;
+}
+}
+@media(max-width:600px){
+    #cifrarButton, #decifrarButton {
+        width: 90%;
+    }
+    #container{
+       display: flex;
+       flex-direction: column;
+       margin-left: 0%;
+       margin-right: 0%;
+       height: 100vh;
+    }
+    #caja1{
+       width: 100%;
+       height: 65%;
+       margin-top: 5%;    
+    }
+    #caja2{
+       width: 100%;
+       height: 35%;
+       margin-top: 5%;
+    }
+    #caja2 #output {    
+        background-image: none !important;
+    }
+   #copiarButton{
+       margin-bottom: 2%;
+   }
+   .botones {
+    flex-direction: column;
+    justify-content: center; /* Centra los botones verticalmente */
+    align-items: center; /* Centra los botones horizontalmente */
+    gap: 10px; /* Añade un espacio entre los botones */
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+    }
+   }
+   
+   #input, #output {
+    cursor: text; /* Cursor de texto para áreas de entrada y salida de texto */
+}
+   
